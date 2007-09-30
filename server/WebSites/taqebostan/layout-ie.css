@@ -1,0 +1,27 @@
+@charset "utf-8";
+html {
+	filter: Gray;
+}
+#dvPreLoader {
+   	background: url() !important;
+	left: 0 !important;
+	top: 0 !important;
+}
+#logo {
+	padding-top: 8px !important;
+}
+.mlmenu iframe {
+	position: absolute !important;
+	display: none !important;
+	filter: alpha(opacity=0) !important;
+	z-index: 2 !important;
+}
+select, object, iframe {
+	z-index: 1 !important;
+}
+.delay li.hide ul {
+	filter: alpha(opacity=0) !important;
+}
+.vertical ul {
+	z-index: 888 !important;
+}

@@ -1,0 +1,19 @@
+«»‰ »—‰«„Â »” Â Â« Ê „Ê·›Â Â«Ì ‰—„ «›“«—Ì “Ì— —« ‰’» „Ì ‰„«Ìœ:
+
+
+Prerequisites:
+
+Microsoft Windows Installer 4.5
+
+Microsoft .NET Framework 2.0 Service Pack 1 (x86)
+
+Microsoft Data Access Components (MDAC) 2.8 SP1
+
+Security Update for Microsoft Data Access Components 2.8 Service Pack 1 (KB911562)
+
+Security Update for Microsoft Data Access Components 2.8 Service Pack 1 (KB927779)
+
+
+and also
+
+Taq-e Bostan CMS v1.0

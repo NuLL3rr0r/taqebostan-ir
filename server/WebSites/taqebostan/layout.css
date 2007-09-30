@@ -1,0 +1,281 @@
+@charset "utf-8";
+.dvBody {
+	background: #FEFEFE;
+	margin: 0 auto;
+	width: 960px;
+}
+.dvHeader {
+	width: 960px;
+	height: 137px;
+	background: url(bg_logo.jpg) no-repeat;
+	position: relative;
+}
+.dvMain {
+	background: #E2DDB5 url(bg_menu_bottom.jpg) no-repeat right bottom;
+}
+.dvMenu {
+	width: 189px;
+	background: url(bg_menu_top.jpg) no-repeat center top;
+	float: right;
+	padding-top: 199px;
+}
+.dvArc {
+	width: 771px;
+	background: #FEFEFE;
+	float: left;
+}
+.dvColumn {
+	background: url(bg_column.jpg) repeat-y center;
+	margin-top: -1px;
+	margin-bottom: -26px;
+	padding: 0 112px;
+}
+#dvContentsInner {
+	min-height: 800px;
+	direction: rtl;
+	text-align: justify;
+	line-height: 33px;
+	padding: 20px 21px 20px 15px;
+	top: -220px;
+	position: relative;
+}
+.topPointer {
+	position: relative; top: -2em;
+	padding-top: 2em;
+	text-align: center;
+}
+.dvNavBar {
+	background:	#D3CEB0 url(bg_nav.png) repeat-x;
+	font-weight: bold;
+	font-size: 11px;
+	margin: 0 auto;
+	width: 548px;
+	direction: rtl;
+	height: 26px;
+}
+.mnuNavBar {
+	margin: 0 auto;
+	padding: 8px 0;
+	list-style: none;
+}
+.mnuNavBar li {
+	float: right;
+}
+.mnuNavBar a {
+	padding: 0 11px;
+	border: none;
+	text-decoration: none;
+	color: #666666 !important;
+}
+.mnuNavBar a:hover {
+	color: #000000 !important;
+	text-decoration: none;
+}
+.dvCopyright {
+	background: #795549 url(bg_copyright.png) repeat-x;
+	height: 70px;
+	padding: 20px 0 0 20px;
+}
+.dvCopyright p {
+	margin: 0;
+	font: bold .6em Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	padding: 0 15px;
+}
+.dvCopyright a {
+	color: #FFFF00 !important;
+}
+.dvRecommends {
+	font-size: 10px;
+	color: #FFFFFF;
+	text-align: right;
+	padding: 0 20px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+.mnuTitle {
+	position: relative;
+	background: #795549 url(bg_mnuheaders.png) repeat-x;
+	height: 23px;
+	font: bold 12px "Tahoma";
+	padding: 3px 20px 0 20px;
+	color: #FFFF00;
+	text-align: right;
+}
+
+
+
+.vertical ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	direction: rtl;
+}
+.vertical li a {
+	display: block;
+	width: 152px;
+	text-decoration: none;
+	height: 1.5em;
+	padding: 3px 33px 3px 3px;
+	border: 1px solid;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.vertical li {
+	position: relative;
+	border-bottom: 1px solid transparent;
+	margin-bottom: -1px;
+} 
+.vertical li:first-child>a {
+	border-top: 1px solid;
+}
+.vertical a.first {
+	border-top: 1px solid;
+}
+.vertical li ul {
+	position: absolute;
+	top: -1px;
+	left: 190px;
+}
+.vertical li ul li {
+	border: 1px solid;
+	border-top: none;
+}
+.vertical li ul li:last-child>a {
+	border-bottom: none;
+}
+.vertical.left ul ul ul,.vertical .left ul {
+	left: -165px;
+	top: 8px;
+}
+.mlmenu li ul {
+	display: none;
+}
+.mlmenu li:hover>ul {
+	display: block;
+}
+.accessible li ul {
+	display: block;
+}
+.noshow {
+	visibility: hidden;
+}
+.blackwhite {
+	font: bold 11px "Tahoma";
+}
+.blackwhite li a {
+	background: #D3CEB0;
+	color: #000000;
+	border-color: #000000;
+}
+.blackwhite li a:hover,.blackwhite li a.first:hover,.blackwhite .trail a.hover {
+	background: #0D91DF;
+	color: #EDF3FE;
+	border-color: #000000;
+}
+.blackwhite li:first-child>a:hover {
+	border-color: #2F579B;
+}
+.blackwhite ul {
+	border-color: #2F579B;
+}
+
+
+
+
+.skinContexMenu {
+	position: absolute;
+	width: 165px;
+	border: 2px solid black;
+	background-color: #795549;
+	font-family: Tahoma;
+	line-height: 20px;
+	cursor: default;
+	font-size: 12px;
+	z-index: 100;
+	visibility: hidden;
+	direction: rtl;
+}
+.menuitems {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #FFFF00 !important;
+}
+.skinContexMenu hr {
+	color: #666666;
+}
+
+
+
+
+input, select, textarea {
+	font-family: Tahoma;
+}
+
+
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 19px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 13px;
+}
+h6 {
+	font-size: 11px;
+}
+
+
+
+.dvLang {
+	position: absolute;
+	top: 11px;
+	left: 0;
+}
+.langBar {
+	list-style-type: none;
+	margin: 8px 5px;
+	padding: 0;
+}
+.langBar li {
+	float: left;
+}
+.langBar a {
+	padding: 0 6px;
+	color: #000000;
+	font-size: 11px;
+	text-decoration: none;
+}
+.langBar li img {
+	border: 1px solid #CCCCCC;
+	border-bottom: 1px solid #333333;
+	border-right: 1px solid #333333;
+	margin: 0 4px;
+	vertical-align: middle;
+}
+
+.langBar li a:hover img {
+	border: 1px solid #333333;
+	border-bottom: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+}
+
+
+
+

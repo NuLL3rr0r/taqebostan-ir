@@ -1,0 +1,10 @@
+@charset "utf-8";
+.treeview li {
+	background: white url(smlist.gif) no-repeat left center !important;
+	padding-left: 22px !important;
+}
+
+.treeview li.submenu {
+	background: white url(smclosed.gif) no-repeat left 1px !important;
+}
+

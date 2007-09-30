@@ -1,0 +1,52 @@
+@charset "utf-8";
+.dvHeader {
+	background: url(bg_logo.en.jpg) no-repeat !important;
+}
+.dvMenu {
+	float: left !important;
+	background-image: url(bg_menu_top.en.jpg) !important;
+}
+.dvArc {
+	float: right !important;
+}
+.dvMain {
+	background-position: left bottom !important;
+	background-image: url(bg_menu_bottom.en.jpg) !important;
+}
+.dvNavBar {
+	direction: ltr !important;
+}
+.mnuNavBar li {
+	float: left !important;
+}
+.skinContexMenu {
+	direction: ltr !important;
+}
+.mnuTitle {
+	direction: ltr !important;
+	text-align: left !important;
+}
+.vertical li a {
+	direction: ltr;
+	padding-left: 33px !important;
+	padding-right: 3px !important;
+}
+.vertical li ul {
+	left: 165px !important;
+}
+#dvContentsInner {
+	direction: ltr !important;
+	padding: 20px 15px 20px 21px !important;
+}
+.dvLang {
+	right: 0 !important;
+	left: auto !important;
+}
+.langBar li {
+	float: right !important;
+}
+
+#dvURLSourceTop {
+	padding-right: 0 !important;
+	padding-left: 15px !important;
+}

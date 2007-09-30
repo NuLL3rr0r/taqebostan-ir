@@ -1,0 +1,341 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B211E5B3-4F15-4498-8654-A64A40146E17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>taqebostan</RootNamespace>
+    <AssemblyName>taqebostan</AssemblyName>
+    <ApplicationIcon>master.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MagicLibrary, Version=1.7.0.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MagicLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContactList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactList.Designer.cs">
+      <DependentUpon>ContactList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editor.designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncDec.cs" />
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI.Designer.cs">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkDialog.designer.cs">
+      <DependentUpon>LinkDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nodes.Designer.cs">
+      <DependentUpon>Nodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pw.Designer.cs">
+      <DependentUpon>Pw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDialog.designer.cs">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ContactList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContactList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkDialog.resx">
+      <DependentUpon>LinkDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nodes.resx">
+      <DependentUpon>Nodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pw.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewCount.rdlc" />
+    <EmbeddedResource Include="Reports.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchDialog.resx">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextInsertForm.resx">
+      <DependentUpon>TextInsertForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TinyInputBox.resx">
+      <DependentUpon>TinyInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TextInsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextInsertForm.designer.cs">
+      <DependentUpon>TextInsertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TinyInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TinyInputBox.designer.cs">
+      <DependentUpon>TinyInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\taq\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Zipper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader.splash.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skin.pw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skin.back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MagicLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="master.ico" />
+    <Content Include="Microsoft.mshtml.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Microsoft.ReportViewer.Common.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Microsoft.ReportViewer.ProcessingObjectModel.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Microsoft.ReportViewer.WinForms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\sbmnu.reports.vcount.over.en.png" />
+    <None Include="Resources\sbmnu.reports.vcount.down.en.png" />
+    <None Include="Resources\sbmnu.reports.vcount.up.en.png" />
+    <None Include="Resources\skin.nodes.png" />
+    <None Include="Web References\taq\management.disco" />
+    <None Include="Resources\skin.contactlist.png" />
+    <None Include="Resources\gallery.png" />
+    <None Include="BTrafcBd.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\members.png" />
+    <None Include="Resources\reports.png" />
+    <None Include="Resources\pw.png" />
+    <None Include="BTraffic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="reportsDataSet.xsc">
+      <DependentUpon>reportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="reportsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>reportsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="reportsDataSet.xss">
+      <DependentUpon>reportsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\reports_right_repeat.png" />
+    <None Include="Resources\reports_left_repeat.png" />
+    <None Include="Resources\reports_top_repeat.png" />
+    <None Include="Resources\reports_bottom_repeat.png" />
+    <None Include="Resources\reports_bottom_right.png" />
+    <None Include="Resources\reports_bottom_left.png" />
+    <None Include="Resources\reports_top_right.png" />
+    <None Include="Resources\reports_top_left.png" />
+    <None Include="Resources\reports_back.png" />
+    <None Include="Resources\sbmnu.reports.vcount.down.png" />
+    <None Include="Resources\sbmnu.reports.vcount.over.png" />
+    <None Include="Resources\sbmnu.reports.vcount.up.png" />
+    <None Include="Resources\iconMembers.png" />
+    <None Include="Resources\iconReports.png" />
+    <None Include="Resources\iconAbout.png" />
+    <None Include="Resources\iconChangePw.png" />
+    <None Include="reports.rpt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\backcolor.bmp" />
+    <None Include="Resources\bold.bmp" />
+    <None Include="Resources\cj.bmp" />
+    <None Include="Resources\color.bmp" />
+    <None Include="Resources\fj.bmp" />
+    <None Include="Resources\indent.bmp" />
+    <None Include="Resources\italic.bmp" />
+    <None Include="Resources\link.bmp" />
+    <None Include="Resources\lj.bmp" />
+    <None Include="Resources\ol.bmp" />
+    <None Include="Resources\outdent.bmp" />
+    <None Include="Resources\rj.bmp" />
+    <None Include="Resources\underscore.bmp" />
+    <None Include="Resources\uol.bmp" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\loading.back.gif" />
+    <None Include="Resources\about.png" />
+    <None Include="Web References\taq\management.wsdl" />
+    <None Include="Web References\taq\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:50559/taqebostan/management.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\taq\</RelPath>
+      <UpdateFromURL>http://localhost:50559/taqebostan/management.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>taqebostan_taq_Management</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

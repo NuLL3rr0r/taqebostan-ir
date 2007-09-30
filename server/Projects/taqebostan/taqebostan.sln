@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "taqebostan", "..\..\WebSites\taqebostan\", "{C783E321-C335-4A07-98CB-EADBD5A12126}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		Debug.AspNetCompiler.VirtualPath = "/taqebostan"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\taqebostan\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\taqebostan\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/taqebostan"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\taqebostan\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\taqebostan\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3353"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C783E321-C335-4A07-98CB-EADBD5A12126}.Debug|.NET.ActiveCfg = Debug|.NET
+		{C783E321-C335-4A07-98CB-EADBD5A12126}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
